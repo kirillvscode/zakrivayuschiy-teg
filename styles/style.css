@@ -319,3 +319,31 @@
   padding-block: 9px;
   text-transform: uppercase;
 }
+
+.filter-grayscale {
+  filter: grayscale(90%);
+}
+
+.filter-hue {
+  filter: hue-rotate(890deg);
+}
+
+.filter-contrast-hue {
+  filter: contrast(100%) hue-rotate(390deg);
+}
+
+.filter-contrast-grayscale {
+  filter: invert(1);
+}
+
+.filter-invert {
+  filter: grayscale(60%) hue-rotate(750deg);
+}
+
+.filter-blur-sepia {
+  filter: blur(15px) sepia(0.2);
+}
+
+.filter-furgon {
+  filter: blur(1.5px) hue-rotate(470deg);
+}
