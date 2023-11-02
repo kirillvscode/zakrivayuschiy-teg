@@ -1,1 +1,17 @@
-/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --bg-grain: 2px;
+  --gradent-horiz-color: #D3D3D3;
+  --gradient-top: #e7e7e7;
+  --gradient-down: #1a1a1a;
+  --bg-color: #FFF;
+  --main-font: 'Inter', sans-serif;
+  --accent-font: 'Press Start 2P';
+  --bold-weight: 700;
+  --normal-weight: 400;
+  --text-color: #000;
+  --accent-color: #000;
+  --shadow-color: #FFF;
+  --width: clamp(23.438rem, 16.285rem + 30.516vw, 43.75rem);
+  --button-text-color: var(--bg-color);
+  --fill-icon-color: #FF0000;
+}
