@@ -57,8 +57,6 @@
     animation: menu-arrow ease-in-out 1s infinite;
 }
 
-
-
 @keyframes button-slide {
     0% {
         transform: scaleX(0);
@@ -79,12 +77,9 @@
     animation-fill-mode: forwards;
 }
 
-
-
 .animated-button {
     transition: box-shadow 0.3s ease;
 }
-
 
 @keyframes icon-border {
     0% {
@@ -122,8 +117,6 @@
     transition: fill 0.3s 0.03s linear;
 }
 
-
-
 .like-icon:active .core {
     fill: var(--fill-icon-color);
     transition: fill 0.3s linear;
@@ -133,8 +126,6 @@
     fill: var(--fill-icon-color);
     transition: fill 0.3s 0.05s linear;
 }
-
-
 
 @keyframes scaling {
     0% {
