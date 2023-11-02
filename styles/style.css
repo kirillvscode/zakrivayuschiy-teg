@@ -152,14 +152,19 @@
   mix-blend-mode: hard-light;
 }
 
+@supports (-webkit-text-stroke: 1px var(--shadow-color)) or (text-stroke: 1px var(--shadow-color)) {
+  .card__img-watermark {
+    text-shadow: none;
+    text-stroke: 1px var(--shadow-color);
+    -webkit-text-stroke: 1px var(--shadow-color);
+  }
+}
+
 .card__text {
   display: flex;
   flex-direction: column;
   padding: 21px 24px;
   gap: 27px;
-}
-
-.card__text {
   font-size: 18px;
   line-height: 21px;
 }
@@ -292,9 +297,6 @@
   align-items: center;
   gap: 20px;
   margin-block-end: 30px;
-}
-
-.modal__text>.floppy-icon {
   width: 39px;
   height: 39px;
   flex-shrink: 0;
