@@ -1,31 +1,17 @@
-/* В этом файле вы опишете значения переменных в разных цветовых схемах.
-Придерживайтесь такого именования классов:
-✦ theme-dark — класс тёмной темы
-✦ theme-light — класс светлой темы
-✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
-*/
-.theme-dark {
-    --gradent-horiz-color: #000;
-    --gradient-top: #007f0c;
-    --gradient-down: #004306;
-    --bg-color: #000;
-    --bold-weight: 785;
-    --normal-weight: 465;
-    --accent-color: #00CC14;
-    --shadow-color: #000;
-    --button-text-color: var(--accent-color);
-    --bg-image: url(/images/theme_dark.png);
-}
-
-.theme-light {
+:root {
+    --bg-grain: 2px;
     --gradent-horiz-color: #D3D3D3;
     --gradient-top: #e7e7e7;
     --gradient-down: #1a1a1a;
     --bg-color: #FFF;
+    --main-font: 'Inter', sans-serif;
+    --accent-font: 'Press Start 2P', fantasy;
     --bold-weight: 700;
     --normal-weight: 400;
+    --text-color: #000;
     --accent-color: #000;
     --shadow-color: #FFF;
+    --width: clamp(23.438rem, 16.285rem + 30.516vw, 43.75rem);
     --button-text-color: var(--bg-color);
-    --bg-image: url(/images/theme_light.png);
+    --fill-icon-color: #FF0000;
 }
