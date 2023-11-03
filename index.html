@@ -13,16 +13,19 @@
   <link rel="stylesheet" href="./styles/animations.css" />
   <link rel="stylesheet" href="./styles/themes.css" />
 
-  <link rel="icon" href="/images/favicon.ico" sizes="any">
-  <link rel="icon" href="/svg/favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="/images/favicon.png">
+  <link rel="icon" href="./images/favicon.ico" sizes="any">
+  <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./images/favicon.png">
+</head>
 
 <body class="page">
   <header class="header">
-    <h1 class="header__title">
-      <span class="header__title-main">&lt;/html&gt;</span>
-      <span class="header__title-minor">закрывающий тег</span>
-    </h1>
+    <div class="header__title">
+      <span class="header__title-main"><a>&lt;/html&gt;</a></span>
+      <span class="header__title-minor">
+        <h1 class="header__title-minor">закрывающий тег</h1>
+      </span>
+    </div>
     <nav class="theme-menu header__theme-menu">
       <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
       <ul class="theme-menu__list">
@@ -363,7 +366,7 @@
         </p>
       </div>
       <div class="card__like">
-        <button class="card__icon-button">
+        <button class="card__icon-button" type="submit">
           <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <g class="heart">
@@ -382,29 +385,28 @@
             </path>
           </svg>
         </button>
-        <button class="card__like-button animated-button">
+        <button class="card__like-button animated-button" type="submit">
           <span class="button__text">Like</span>
         </button>
       </div>
     </article>
   </main>
-  <footer class="footer">
-    <button class="footer__button animated-button" onclick="window['modal'].showModal()" aria-controls="modal">
-      <svg class="floppy-icon" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-        <use href="./svg/floppy.svg#tape" />
-      </svg>
-      <span class="button__text">Сохранить на память</span>
-    </button>
-  </footer>
+  <button class="footer__button animated-button" type="submit" onclick="window['modal'].showModal()"
+    aria-controls="modal">
+    <svg class="floppy-icon" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+      <use href="./svg/floppy.svg" />
+    </svg>
+    <span class="button__text">Сохранить на память</span>
+  </button>
   <dialog id="modal">
     <form class="modal__container" method="dialog">
       <div class="modal__text">
         <svg class="floppy-icon" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-          <use href="./svg/floppy.svg#tape" />
+          <use href="./svg/floppy.svg" />
         </svg>
         <p class="modal__label">Вставьте дискету,&nbsp;чтобы продолжить</p>
       </div>
-      <button class="modal__button animated-button">
+      <button class="modal__button animated-button" type="submit">
         <span class="button__text">ок</span>
       </button>
     </form>
