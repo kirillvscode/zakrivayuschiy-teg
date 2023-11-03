@@ -27,17 +27,6 @@
     }
 }
 
-.theme-menu__button::after {
-    transform-origin: left center;
-    transform: scaleX(0);
-    transition: transform 0.3s ease-out;
-}
-
-.theme-menu__button:focus-visible {
-    opacity: 0.6;
-    transition: opacity 0.3s ease;
-}
-
 .theme-menu__button:focus-visible::after {
     transform: scaleX(1);
 }
@@ -51,10 +40,6 @@
 .theme-menu__button:hover {
     opacity: 0.6;
     transition: opacity 0.3s ease;
-}
-
-.theme-menu__button:disabled::before {
-    animation: menu-arrow ease-in-out 1s infinite;
 }
 
 @keyframes button-slide {
@@ -91,10 +76,7 @@
     }
 }
 
-.card__icon-button:focus-visible {
-    animation: icon-border 0.3s ease;
-    animation-fill-mode: forwards;
-}
+
 
 .like-icon:hover .core {
     fill: var(--accent-color);
@@ -163,11 +145,13 @@
 
 .like-icon.is-liked .sparks {
     animation: sparks-opacity 0.3s 0.3s ease-in;
+    animation-direction: alternate;
 }
 
 .like-icon.is-liked .heart {
     transform-origin: center;
     animation: scaling 0.3s 0.1s ease-in;
+    animation-direction: alternate;
 }
 
 .like-icon .contour {
